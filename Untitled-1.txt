@@ -1,0 +1,47 @@
+#include <iostream>
+
+using namespace std;
+
+class Node{
+    public:
+
+    int data;
+    Node *next;
+    Node *prev;
+
+    Node(int x){
+        data=x;
+        next=NULL;
+        prev=NULL;
+    }
+};
+
+Node* detectLoop(Node *head){
+    if(head==NULL){
+        return NULL;
+    }
+    Node *fast=head;
+    Node *slow=head;
+
+    while(fast!=NULL&&fast->next!=NULL){
+        fast=fast->next->next;
+        slow=slow->next;
+
+        if(fast==slow){
+            break;
+        }
+    }
+
+    if(fast==NULL||fast->next==NULL){
+        return NULL;
+    }
+
+    fast=head;
+
+    while(fast!=slow){
+        fast=fast->next;
+        slow=slow->next;
+    }
+
+    return slow;
+}

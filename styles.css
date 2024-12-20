@@ -1,0 +1,822 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg'); /* Path to background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+}
+/* Hero Banner for Subscribe Page */
+.subscribe-banner {
+    height: 40vh;
+    background-image: url('hero_banner.jpg'); /* Replace with your banner image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.subscribe-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.subscribe-banner .banner-text {
+    position: relative;
+    z-index: 2;
+}
+
+.subscribe-banner .banner-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin: 0;
+}
+
+.subscribe-banner .banner-text p {
+    font-size: 1.5rem;
+    color: white;
+    margin: 20px 0;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.subscribe-banner .btn {
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.subscribe-banner .btn:hover {
+    background-color: #c44126;
+}
+
+/* Hero Banner for About Us */
+.about-banner {
+    height: 40vh;
+    background-image: url('hero_banner.jpg'); /* Replace with your banner image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.about-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.about-banner .banner-text {
+    position: relative;
+    z-index: 2;
+}
+
+.about-banner .banner-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffcc00;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin: 0;
+}
+
+.about-banner .banner-text p {
+    font-size: 1.5rem;
+    color: white;
+    margin: 20px 0;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.about-banner .btn {
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.about-banner .btn:hover {
+    background-color: #c44126;
+}
+
+/* Hero Banner for Lifestyle */
+.lifestyle-banner {
+    height: 40vh;
+    background-image: url('feature_banner.jpg'); /* Path to your lifestyle banner image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.lifestyle-banner .banner-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f4a261;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.lifestyle-banner .banner-text p {
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Hero Banner for Features */
+.features-banner {
+    height: 40vh;
+    background-image: url('feature_banner.jpg'); /* Path to your features banner image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.features-banner .banner-text h1 {
+    font-size: 2.5rem;
+    color: #ff5733; /* Standout color for the headline */
+}
+
+.features-banner .banner-text p {
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 10px;
+}
+/* Hero Banner for News */
+.news-banner {
+    height: 40vh;
+    background-image: url('news_background.jpg'); /* Replace with a relevant news banner image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.news-banner .banner-text h1 {
+    color: #14021391; /* Choose a color for the headline text */
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.news-banner .banner-text p {
+    color: #eff5f7e5; /* Lighter color for the subtext, if needed */
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Hero Section */
+.hero-banner {
+    height: 50vh;
+    background-image: url('hero_banner.jpg'); /* Path to hero banner image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.hero-banner .banner-text {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-banner .banner-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffcc00; /* Bright gold color for visibility */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Add depth to text */
+    margin: 0;
+}
+
+.hero-banner .banner-text p {
+    font-size: 1.5rem;
+    color: white;
+    margin: 20px 0;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-banner .btn {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.hero-banner .btn:hover {
+    background-color: #c44126;
+}
+
+/* Features Section */
+.features-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.feature-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.feature-card h3 {
+    padding: 15px;
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.feature-card p {
+    padding: 0 15px;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.feature-card .read-more {
+    display: block;
+    margin: 15px;
+    padding: 10px;
+    background-color: #ff5733;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.feature-card .read-more:hover {
+    background-color: #c44126;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Insights Section */
+.insights-section {
+    padding: 30px 20px;
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+.insights-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.insights-section ul li {
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid #ff5733;
+    background-color: white;
+}
+
+/* News Section */
+.news-section {
+    padding: 50px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+.news-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.news-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.news-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.news-card h3 {
+    margin: 0;
+    padding: 15px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.news-card p {
+    padding: 0 15px;
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.news-card .read-more {
+    display: block;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    background-color: #ff5733;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.news-card .read-more:hover {
+    background-color: #c44126;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Updates Section */
+.updates-section {
+    padding: 30px 20px;
+    background-color: #f4f4f4;
+}
+
+.updates-section h2 {
+    margin-bottom: 20px;
+}
+
+.updates-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.updates-section ul li {
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid #ff5733;
+    background-color: white;
+}
+
+/* Lifestyle Section */
+.lifestyle-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.lifestyle-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.lifestyle-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.lifestyle-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.lifestyle-card h3 {
+    padding: 15px;
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.lifestyle-card p {
+    padding: 0 15px;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.lifestyle-card .read-more {
+    display: block;
+    margin: 15px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.lifestyle-card .read-more:hover {
+    background-color: #1e7e34;
+}
+
+.lifestyle-card:hover {
+    transform: translateY(-5px);
+}
+/* Featured Article Section */
+.featured-article {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.featured-article h2 {
+    font-size: 2rem;
+    color: #e76f51;
+    margin-bottom: 20px;
+}
+
+.featured-article img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.featured-article p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.featured-article .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e76f51;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.featured-article .btn:hover {
+    background-color: #d35c3d;
+}
+
+/* Mission Section */
+.mission-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgba(250, 250, 250, 0.9);
+}
+
+.mission-section h2 {
+    font-size: 2rem;
+    color: #2a9d8f;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2a9d8f;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.mission-section p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.mission-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Team Section */
+.team-section {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2rem;
+    color: #264653;
+    margin-bottom: 20px;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.team-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.team-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Subscription Form Section */
+.subscribe-form-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.subscribe-form-section h2 {
+    font-size: 2rem;
+    color: #2a9d8f;
+    margin-bottom: 20px;
+}
+
+.subscribe-form-section p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.subscribe-form-section ul {
+    list-style: disc;
+    margin: 20px auto;
+    padding: 0;
+    max-width: 600px;
+    text-align: left;
+    color: #333;
+}
+
+.subscribe-form-section ul li {
+    margin-bottom: 10px;
+}
+
+.subscribe-form-section form {
+    margin-top: 20px;
+    display: inline-block;
+    text-align: left;
+    background-color: white;
+    padding-right: 40px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.subscribe-form-section label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.subscribe-form-section input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.subscribe-form-section button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f4a261;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe-form-section button:hover {
+    background-color: #e76f51;
+}
+/* Light background for content clarity */
+
+.featured {
+    display: flex; /* Use flexbox to align items */
+    flex-direction: column; /* Stack heading and cards vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    padding: 20px; /* Optional: Add some spacing */
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.cards {
+    display: flex; /* Use flexbox for card layout */
+    justify-content: center; /* Center the cards horizontally */
+    align-items: center; /* Optional: Align cards vertically if needed */
+    gap: 20px; /* Add spacing between cards */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    width: 100%; /* Ensure the container spans the section */
+    max-width: 1200px; /* Optional: Set a max width */
+}
+
+
+.card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 15px;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.card.active {
+    opacity: 1;
+}
+
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+#scrollToTopBtn.show {
+    display: block; /* Make button visible */
+    opacity: 1; /* Make button fully visible */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px 0;
+}
